@@ -1,0 +1,76 @@
+---
+layout: page
+permalink: /archives/
+title: All Posts
+description: "An archive of posts sorted by date."
+---
+<table class="table table-hover">
+{% capture cur_year %}{{ site.time | date: "%Y" }}{% endcapture %}
+{% for post in site.posts  %}
+{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+{% capture this_month %}{{ post.date | date: "%m" }}{% endcapture %}
+{% capture next_year %}{{ post.next.date | date: "%Y" }}{% endcapture %}
+{% capture next_month %}{{ post.next.date | date: "%m" }}{% endcapture %}
+{% if forloop.first %}
+<tr>
+<td>
+<h3>
+<span class="label label-info">
+{% if this_year == cur_year %}
+  {{ this_year }}-{{ this_month }}
+{% else %}
+  {{ this_year }}
+{% endif %}
+</span>
+</h3>
+</td>
+<td>
+<ul>
+  <li>
+    <span>{{ post.date | date: "%Y-%m-%d" }}</span> <i class="fa fa-hand-o-right"></i>
+    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% else %}
+  {% if this_year == cur_year %}
+    {% if this_month != next_month %}
+      <tr>
+        <td>
+          <h3>
+          <span class="label label-info">{{ this_year }}-{{ this_month }}</span>
+          </h3>
+        </td>
+        <td>
+          <ul>
+            <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> <i class="fa fa-hand-o-right"></i>
+              <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% else %}
+            <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> <i class="fa fa-hand-o-right"></i>
+              <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endif %}
+        {% else %}
+          {% if this_year != next_year %}
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>
+          <span class="label label-info">{{ this_year }}</span>
+          </h3>
+        </td>
+        <td>
+          <ul>
+            <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> <i class="fa fa-hand-o-right"></i>
+              <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% else %}
+            <li><span>{{ post.date | date: "%Y-%m-%d" }}</span> <i class="fa fa-hand-o-right"></i>
+              <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </table>

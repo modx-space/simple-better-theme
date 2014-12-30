@@ -1,0 +1,7 @@
+{% if page.image.file %}
+  <img src="{{ site.url }}/assets/images/{{ page.image.file }}" class="entry-feature-image img-rounded">
+  {% if page.image.author %}
+    <p class="image-credit">Photo Credit:
+    <a href="{{ page.image.link }}" target="_blank">{{ page.image.author }}</a>
+  {% endif %}
+{% endif %}

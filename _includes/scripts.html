@@ -1,0 +1,67 @@
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="{{ site.url }}/assets/js/navigator.js"></script>
+<script src="{{ site.url }}/assets/js/jekyll-search.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<!-- Simple Search -->
+{% if site.search %}
+  <script>
+  $(document).ready(function() {
+  result_template = '<li><article><a href="{url}">{title}</a><div style="float:right"><span class="label label-success">{tag}</span><span class="entry-date"><time>{shortdate}</time></span></div></article></li>';
+  $(".search-field").simpleJekyllSearch({
+  searchResults: $('.search-results'),
+  jsonFile: '/search.json',
+  template: result_template,
+  });
+  });
+
+  (function( $, window, undefined ) {
+  var search = {
+  close: $(".icon-remove-sign"),
+  form: $(".search-form"),
+  results: $(".search-results"),
+  canvas: $("body"),
+  start: $('.dosearch')
+  };
+
+  // search
+  search.start.on('click', function() {
+  $('.search-wrapper').css({ display: "block" });
+  search.form.toggleClass('active');
+  search.form.find('input').focus();
+  search.canvas.toggleClass('search-overlay');
+  });
+
+  // clode
+  $(document).keyup(function(x) {
+    if(x.keyCode == 27) stop();
+  });
+  search.close.on('click', stop());
+  function stop() {
+  search.form.find('input').val('');
+  search.results.empty();
+  search.form.find('input').focus();
+  $('.search-wrapper').removeAttr( 'style' );
+  search.form.toggleClass('active');
+  search.canvas.removeClass('search-overlay');
+  }
+  })( jQuery, window );
+  </script>
+{% endif %}
+<!-- End Search -->
+
+{% if site.google_analytics.enable %}
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '{{ site.google_analytics.id }}', '{{ site.google_analytics.res }}');
+  ga('send', 'pageview');
+  </script>
+{% endif %}
+
+{% if page.comments %}
+  {% include disqus_comments.html %}
+{% endif %}

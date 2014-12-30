@@ -1,0 +1,21 @@
+{% if page.image.file %}
+<header class="masthead">
+  <div class="wrap">
+    <a href="{{ site.url }}" class="site-logo" rel="home">
+      <img src="/{{ site.logo }}" class="animated bounceInDown">
+    </a>
+  </div>
+</header>
+{% else %}
+<header class="masthead">
+  <div class="wrap">
+    <a href="{{ site.url }}" class="site-logo" rel="home">
+      <img src="/{{ site.logo }}" class="animated drop">
+    </a>
+    <h1 class="site-title animated fadeIn">
+    <a href="{{ site.url }}">{{ site.title }}</a>
+    </h1>
+    <h2 class="site-description animated fadeIn">{{ site.description }}</h2>
+  </div>
+</header>
+{% endif %}

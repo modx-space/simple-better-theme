@@ -1,0 +1,12 @@
+<div class="social-icons">
+  {% for social in site.owner.socials %}
+    <a href="{{ social.url }}" title="{{ site.owner.name }} on {{ social.name }}" target="_blank">
+      <i class="fa fa-{{ social.name }}-square fa-3x"></i>
+    </a>
+  {% endfor %}
+</div>
+<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span>
+<br/>
+<span>Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>.</span>
+<br/>
+<span>Using the <a href="{{ site.theme }}" target="_blank">Simple-Better-Theme</a>.</span>

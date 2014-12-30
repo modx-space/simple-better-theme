@@ -1,0 +1,62 @@
+---
+layout: page
+title: Latest Posts
+description: "A personal blog -- keep writing,keep moving."
+tags: [Jekyll, Github, Blog]
+---
+
+<ul class="post-list">
+  {% for post in paginator.posts %}
+    <li>
+      <article>
+        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+          {% if paginator.page == 1 %}
+            <i class="fa fa-pencil"></i>
+          {% endif %}
+        </a>
+        <span class="entry-date">
+        {{ post.date | date: "%Y-%m-%d" }}
+        </span>
+      </article>
+    </li>
+  {% endfor %}
+</ul>
+{% if paginator.total_pages > 1 %}
+<center>
+  <ul class="pagination">
+    {% if paginator.page == 1%}
+      <li class="disabled">
+        <a><i class="fa fa-angle-double-left"></i></a>
+      </li>
+      {% elsif paginator.page ==2  %}
+      <li>
+        <a href="{{ site.url }}/"><i class="fa fa-angle-double-left"></i></a>
+      </li>
+    {% else %}
+      <li>
+        <a href="{{ site.url }}/page{{ paginator.previous_page }}"><i class="fa fa-angle-double-left"></i></a>
+      </li>
+    {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <li class="active">
+          <a href="{{ site.url }}/page{{ page }}">{{ page }}</a>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ site.url }}page{{ page }}">{{ page }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+    {% if paginator.page == paginator.total_pages %}
+      <li class="disabled">
+        <a><i class="fa fa-angle-double-right"></i></a>
+      </li>
+    {% else %}
+      <li>
+        <a href="{{ site.url }}/page{{ paginator.next_page }}"><i class="fa fa-angle-double-right"></i></a>
+      </li>
+    {% endif %}
+  </ul>
+</center>
+{% endif %}

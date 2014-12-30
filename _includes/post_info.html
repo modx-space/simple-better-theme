@@ -1,0 +1,49 @@
+<div class="entry-meta">
+  <img src="{{ site.url }}/{{ site.owner.avatar }}" class="author-photo">
+  <span>
+  <i class="fa fa-male fa-3x"></i>
+  <button class="btn btn-info btn-xs">
+  <a href="{{ site.url }}/about">{{ site.owner.name }}</a>
+  </button>
+  </span>
+  <span>
+  <i class="fa fa-calendar fa-2x"></i>
+  <button class="btn btn-info btn-xs">
+  {{ page.date | date: "%Y-%m-%d" }}
+  </button>
+  </span>
+  <span>
+  <i class="fa fa-pencil fa-2x"></i>
+  <button class="btn btn-info btn-xs">
+  {{ page.modified | date: "%Y-%m-%d" }}
+  </button>
+  </span>
+  <span>
+  <i class="fa fa-tag fa-2x"></i>
+  {% for tag in page.tags %}
+    <button class="btn btn-success btn-xs">
+    <a href="{{ site.url }}/tags/#{{ tag | cgi_encode }}">{{ tag }}</a>
+    </button>
+  {% endfor %}
+  </span>
+  {% if site.disqus_shortname and page.comments %}
+    <span class="entry-comments">
+    <i class="fa fa-comment fa-2x"></i>
+    <a href="#disqus_thread"></a>
+    </span>
+  {% endif %}
+  {% if page.share %}
+    <span>
+    <button class="btn btn-success btn-xs">
+    <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" target="_blank">
+      <i class="fa fa-twitter"></i> Tweet
+    </a>
+    </button>
+    <button class="btn btn-success btn-xs">
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">
+      <i class="fa fa-google-plus"></i> +1
+    </a>
+    </button>
+    </span>
+  {% endif %}
+</div>

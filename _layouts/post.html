@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    {% include head.html %}
+  </head>
+  <body id="post">
+    {% include partials.html %}
+    <div id="main">
+      <article class="hentry">
+        {% include image_show.html %}
+        <div class="entry-wrapper">
+          {% include post_info.html %}
+          <div class="entry-content">
+            <header class="entry-header">
+              <h2 class="entry-title">
+              {% if page.link %}
+                <i class="fa fa-external-link">
+                <a href="{{ page.link }}" target="_blank">{{ page.title }}</a>
+                </i>
+              {% else %}
+                {{ page.title }}
+              {% endif %}
+              </h2>
+            </header>
+            {% for i in (0..60) %}
+              *
+            {% endfor %}
+            {{ content }}
+            {% if site.disqus_shortname and page.comments %}
+              <div id="disqus_thread"></div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <ul class="pager">
+            {% if page.previous %}
+              <a href="{{ site.url }}{{ page.previous.url }}" class="btn">
+                <i class="fa fa-arrow-circle-left"></i> Prev
+              </a>
+            {% endif %}
+            {% if page.next %}
+              <a href="{{ site.url }}{{ page.next.url }}" class="btn">
+                Next <i class="fa fa-arrow-circle-right"></i>
+              </a>
+            {% endif %}
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div class="footer-wrapper">
+      <footer role="contentinfo">
+        {% include footer.html %}
+      </footer>
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>

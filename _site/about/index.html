@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+    <title>About me | Keep Writing</title>
+
+    <meta charset="utf-8">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="记录点滴，积累成长">
+
+
+    <meta name="keywords" content="me,infor">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Keep Writing Feed">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  </head>
+  <body id="page">
+    <!-- keep the order -->
+<div class="navigation-wrapper">
+  <nav role="navigation" id="site-nav" class="animated drop">
+    <ul>
+      
+        <li>
+          
+            <a href="/about/">About</a>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/archives/">Archives</a>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/tags/">Tags</a>
+          
+        </li>
+      
+      
+        <li>
+          <a href="http://localhost:4000/feed.xml"><i class="fa fa-rss"></i> Feed</a>
+        </li>
+      
+      
+        <li class="dosearch"><i class="fa fa-search"></i> Search</li>
+      
+    </ul>
+  </nav>
+</div>
+<!--[if lt IE 10]>
+<div class="browser-tip">
+  <h2>[ Your browser is toooo old! ]</h2>
+  <a href="http://whatbrowser.org/">
+    Why not upgrade to a modern browser to enjoy this site better? Click me.
+  </a>
+</div>
+<![endif]-->
+
+  <div class="search-wrapper">
+    <div class="search-form">
+      <input type="text" class="search-field" placeholder="Search... (Press `ESC` to exit)">
+      <i class="icon-remove-sign icon-2x"></i>
+    <ul class="search-results post-list"></ul>
+  </div>
+</div>
+
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="http://localhost:4000" class="site-logo" rel="home">
+      <img src="/site-logo.png" class="animated bounceInDown">
+    </a>
+  </div>
+</header>
+
+    <div id="main">
+      <article class="entry">
+        
+  <img src="http://localhost:4000/assets/images/town.jpg" class="entry-feature-image img-rounded">
+  
+
+        <div class="entry-wrapper">
+          <header class="entry-header">
+            <h1 class="entry-title">About me</h1>
+          </header>
+          <div class="entry-content">
+            <p><strong>写点简介</strong></p>
+
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="footer-wrapper">
+      <footer>
+        <div class="social-icons">
+  
+    <a href="https://twitter.com/shawzt" title="shawzt on twitter" target="_blank">
+      <i class="fa fa-twitter-square fa-3x"></i>
+    </a>
+  
+    <a href="https://github.com/shawzt" title="shawzt on github" target="_blank">
+      <i class="fa fa-github-square fa-3x"></i>
+    </a>
+  
+    <a href="https://plus.google.com/+ShawZTProo" title="shawzt on google-plus" target="_blank">
+      <i class="fa fa-google-plus-square fa-3x"></i>
+    </a>
+  
+</div>
+<span>&copy; 2014 shawzt.</span>
+<br/>
+<span>Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>.</span>
+<br/>
+<span>Using the <a href="https://github.com/shawzt/simple-better-theme/" target="_blank">Simple-Better-Theme</a>.</span>
+      </footer>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/navigator.js"></script>
+<script src="http://localhost:4000/assets/js/jekyll-search.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<!-- Simple Search -->
+
+  <script>
+  $(document).ready(function() {
+  result_template = '<li><article><a href="{url}">{title}</a><div style="float:right"><span class="label label-success">{tag}</span><span class="entry-date"><time>{shortdate}</time></span></div></article></li>';
+  $(".search-field").simpleJekyllSearch({
+  searchResults: $('.search-results'),
+  jsonFile: '/search.json',
+  template: result_template,
+  });
+  });
+
+  (function( $, window, undefined ) {
+  var search = {
+  close: $(".icon-remove-sign"),
+  form: $(".search-form"),
+  results: $(".search-results"),
+  canvas: $("body"),
+  start: $('.dosearch')
+  };
+
+  // search
+  search.start.on('click', function() {
+  $('.search-wrapper').css({ display: "block" });
+  search.form.toggleClass('active');
+  search.form.find('input').focus();
+  search.canvas.toggleClass('search-overlay');
+  });
+
+  // clode
+  $(document).keyup(function(x) {
+    if(x.keyCode == 27) stop();
+  });
+  search.close.on('click', stop());
+  function stop() {
+  search.form.find('input').val('');
+  search.results.empty();
+  search.form.find('input').focus();
+  $('.search-wrapper').removeAttr( 'style' );
+  search.form.toggleClass('active');
+  search.canvas.removeClass('search-overlay');
+  }
+  })( jQuery, window );
+  </script>
+
+<!-- End Search -->
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-47043610-1', 'shawzt.github.io');
+  ga('send', 'pageview');
+  </script>
+
+
+
+  </body>
+</html>

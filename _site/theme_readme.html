@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+    <title>Simple-Better-Theme配置 | Keep Writing</title>
+
+    <meta charset="utf-8">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="应用/自定义Simple-Better-Theme指南">
+
+
+    <meta name="keywords" content="配置">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/main.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Keep Writing Feed">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  </head>
+  <body id="post">
+    <!-- keep the order -->
+<div class="navigation-wrapper">
+  <nav role="navigation" id="site-nav" class="animated drop">
+    <ul>
+      
+        <li>
+          
+            <a href="/about/">About</a>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/archives/">Archives</a>
+          
+        </li>
+      
+        <li>
+          
+            <a href="/tags/">Tags</a>
+          
+        </li>
+      
+      
+        <li>
+          <a href="http://localhost:4000/feed.xml"><i class="fa fa-rss"></i> Feed</a>
+        </li>
+      
+      
+        <li class="dosearch"><i class="fa fa-search"></i> Search</li>
+      
+    </ul>
+  </nav>
+</div>
+<!--[if lt IE 10]>
+<div class="browser-tip">
+  <h2>[ Your browser is toooo old! ]</h2>
+  <a href="http://whatbrowser.org/">
+    Why not upgrade to a modern browser to enjoy this site better? Click me.
+  </a>
+</div>
+<![endif]-->
+
+  <div class="search-wrapper">
+    <div class="search-form">
+      <input type="text" class="search-field" placeholder="Search... (Press `ESC` to exit)">
+      <i class="icon-remove-sign icon-2x"></i>
+    <ul class="search-results post-list"></ul>
+  </div>
+</div>
+
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="http://localhost:4000" class="site-logo" rel="home">
+      <img src="/site-logo.png" class="animated drop">
+    </a>
+    <h1 class="site-title animated fadeIn">
+    <a href="http://localhost:4000">Keep Writing</a>
+    </h1>
+    <h2 class="site-description animated fadeIn">记录点滴，积累成长</h2>
+  </div>
+</header>
+
+    <div id="main">
+      <article class="hentry">
+        
+        <div class="entry-wrapper">
+          <div class="entry-meta">
+  <img src="http://localhost:4000/shawzt.png" class="author-photo">
+  <span>
+  <i class="fa fa-male fa-3x"></i>
+  <button class="btn btn-info btn-xs">
+  <a href="http://localhost:4000/about">shawzt</a>
+  </button>
+  </span>
+  <span>
+  <i class="fa fa-calendar fa-2x"></i>
+  <button class="btn btn-info btn-xs">
+  2014-12-30
+  </button>
+  </span>
+  <span>
+  <i class="fa fa-pencil fa-2x"></i>
+  <button class="btn btn-info btn-xs">
+  2014-12-30
+  </button>
+  </span>
+  <span>
+  <i class="fa fa-tag fa-2x"></i>
+  
+    <button class="btn btn-success btn-xs">
+    <a href="http://localhost:4000/tags/#配置">配置</a>
+    </button>
+  
+  </span>
+  
+    <span class="entry-comments">
+    <i class="fa fa-comment fa-2x"></i>
+    <a href="#disqus_thread"></a>
+    </span>
+  
+  
+</div>
+          <div class="entry-content">
+            <header class="entry-header">
+              <h2 class="entry-title">
+              
+                Simple-Better-Theme配置
+              
+              </h2>
+            </header>
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+              *
+            
+            <h4 id="span-classlabel-label-infosimple-betterspan"><span class="label label-info">应用/定制Simple Better主题指南</span></h4>
+
+<ul>
+  <li>
+    <h5 id="jekyll"><strong>针对全新Jekyll站点的设置</strong></h5>
+
+    <ol>
+      <li>如果还没有Jekyll环境,<a href="http://jekyllrb.com">请阅读并安装Jekyll</a>.</li>
+      <li>安装Ruby和<code>bundler gem</code>,<a href="https://github.com/shawzt/simple-better-theme" target="_blank" class="btn">克隆本主题</a></li>
+      <li>在<code>simple-better-theme</code>下运行<code>bundle install</code></li>
+      <li>根据个人站点的信息编辑<code>_config.yml</code>文件.</li>
+      <li>删除<code>_posts</code>目录下的样例文章.</li>
+      <li>关于更详细的定制, 请阅读以下文档.</li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <h5 id="jekyll-1"><strong>针对已有Jekyll站点的设置</strong></h5>
+
+    <ol>
+      <li>替换站点中的以下目录: <code>_includes</code>, <code>_layouts</code>, <code>assets</code>.</li>
+      <li>根据需求编辑如下文件: <code>about.md</code>, <code>archives.html</code>, <code>index.html</code>, <code>tags.html</code>.</li>
+      <li>根据需求编辑<code>_config.yml</code>文件.</li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="span-classlabel-label-infosimple-betterspan-1"><span class="label label-info">Simple Better主题详解</span></h4>
+
+<ul>
+  <li>
+    <h5 id="section"><strong>目录结构</strong></h5>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">simple-better-theme/
+├── _includes/
+<span class="p">|</span>    ├── browser_tip.html         <span class="c">#浏览器升级提示(&lt;IE10)</span>
+<span class="p">|</span>    ├── disqus_comments.html     <span class="c">#Disqus插件</span>
+<span class="p">|</span>    ├── footer.html              <span class="c">#页脚</span>
+<span class="p">|</span>    ├── head.html                <span class="c">#页头</span>
+<span class="p">|</span>    ├── image_show.html          <span class="c">#显示Page图片</span>
+<span class="p">|</span>    ├── logo_show.html           <span class="c">#显示Logo图片</span>
+<span class="p">|</span>    ├── navigator.html           <span class="c">#导航栏</span>
+<span class="p">|</span>    ├── partials.html            <span class="c">#包含navigator,browser_tip,search,logo_show</span>
+<span class="p">|</span>    ├── post_info.html           <span class="c">#Post的基本信息</span>
+<span class="p">|</span>    ├── search.html              <span class="c">#search插件</span>
+<span class="p">|</span>    └── scripts.html             <span class="c">#脚本:bootstrap,jquery,search...</span>
+├── _layouts/
+<span class="p">|</span>    ├── page.html                <span class="c">#页面布局</span>
+<span class="p">|</span>    └── post.html                <span class="c">#文章布局</span>
+├── _posts/                       <span class="c">#文章</span>
+├── assets/
+<span class="p">|</span>    ├── css/                     <span class="c">#css样式</span>
+<span class="p">|</span>    ├── images/                  <span class="c">#图片资源</span>
+<span class="p">|</span>    ├── js/                      <span class="c">#search,navigator的js文件</span>
+<span class="p">|</span>    <span class="p">|</span>   ├── jekyll-search.js
+<span class="p">|</span>    <span class="p">|</span>   └── navigator.js
+├── 404.md                        <span class="c">#&#39;404&#39;页面</span>
+├── _config.yml                   <span class="c">#Jekyll站点配置文件</span>
+├── about.md                      <span class="c">#&#39;关于&#39;页面</span>
+├── archives.html                 <span class="c">#按日期归档页面</span>
+├── favicon.ico                   <span class="c">#favicon图标</span>
+├── feed.xml                      <span class="c">#feed文件</span>
+├── index.html                    <span class="c">#首页,附有分页功能</span>
+├── search.json                   <span class="c">#用于search的JSON数据</span>
+├── shawzt.png                    <span class="c">#Author头像</span>
+├── site-logo.png                 <span class="c">#Logo图标</span>
+└── tags.html                     <span class="c">#标签页面</span></code></pre></div>
+
+<ul>
+  <li>
+    <h5 id="configyml"><strong>配置文件_config.yml</strong></h5>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span>            <span class="l-Scalar-Plain">站点名称</span>
+<span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span>      <span class="l-Scalar-Plain">站点描述</span>
+<span class="l-Scalar-Plain">logo</span><span class="p-Indicator">:</span>             <span class="l-Scalar-Plain">site-logo.png</span>
+<span class="l-Scalar-Plain">theme</span><span class="p-Indicator">:</span>            <span class="l-Scalar-Plain">https://github.com/shawzt/simple-better-theme/</span>
+<span class="c1"># 站点domain. 本地运行时，请保留现有设置.</span>
+<span class="c1"># PS:设置不正确,将导致站点无法正常工作.</span>
+<span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span>              <span class="l-Scalar-Plain">http://localhost:4000</span>
+
+<span class="c1"># 作者信息</span>
+<span class="l-Scalar-Plain">owner</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span>           <span class="l-Scalar-Plain">your-name</span>
+  <span class="l-Scalar-Plain">avatar</span><span class="p-Indicator">:</span>         <span class="l-Scalar-Plain">your-photo.jpg</span>
+  <span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span>          <span class="l-Scalar-Plain">your@email.com</span>
+  <span class="c1"># 用于页脚的社交账号,根据个人需求更新.</span>
+  <span class="c1"># 名称需要和 http://fortawesome.github.io/Font-Awesome/icons/上的图标名称一致</span>
+  <span class="c1"># 以确保图标的正常显示</span>
+  <span class="l-Scalar-Plain">socials</span><span class="p-Indicator">:</span>
+    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">twitter</span>
+      <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">https://twitter.com/shawzt</span>
+    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">github</span>
+      <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">https://github.com/shawzt</span>
+    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">google-plus</span>
+      <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">https://plus.google.com/+ShawZTProo</span>
+
+<span class="c1"># 站点分析工具</span>
+<span class="l-Scalar-Plain">google_analytics</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">enable</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true/false</span>
+  <span class="l-Scalar-Plain">id</span><span class="p-Indicator">:</span>     <span class="l-Scalar-Plain">媒体资源的跟踪ID</span>
+  <span class="l-Scalar-Plain">res</span><span class="p-Indicator">:</span>    <span class="l-Scalar-Plain">跟踪ID对应的默认网址</span>
+
+<span class="c1"># Disqus评论插件</span>
+<span class="l-Scalar-Plain">disqus_shortname</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">logsomething</span>
+
+<span class="c1"># 启用search功能</span>
+<span class="l-Scalar-Plain">search</span><span class="p-Indicator">:</span>           <span class="l-Scalar-Plain">true</span>
+<span class="c1"># 启用feed功能</span>
+<span class="l-Scalar-Plain">feed</span><span class="p-Indicator">:</span>             <span class="l-Scalar-Plain">true</span>
+
+<span class="c1"># 页眉的导航项</span>
+<span class="c1"># PS:外部链接,需要添加external: true</span>
+<span class="l-Scalar-Plain">links</span><span class="p-Indicator">:</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">About</span>
+    <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/about</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Archives</span>
+    <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/archives</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">GitHub</span>
+    <span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://github.com/shawzt</span>
+    <span class="l-Scalar-Plain">external</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span>
+
+<span class="l-Scalar-Plain">timezone</span><span class="p-Indicator">:</span>    <span class="l-Scalar-Plain">Asia/Shanghai</span>
+<span class="l-Scalar-Plain">future</span><span class="p-Indicator">:</span>      <span class="l-Scalar-Plain">true</span>
+<span class="l-Scalar-Plain">highlighter</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">pygments</span>
+<span class="l-Scalar-Plain">markdown</span><span class="p-Indicator">:</span>    <span class="l-Scalar-Plain">kramdown</span>
+
+<span class="c1"># 链接样式 </span>
+<span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span>   <span class="l-Scalar-Plain">none</span>
+
+<span class="c1"># 插件</span>
+<span class="c1"># 参考https://help.github.com/articles/using-jekyll-plugins-with-github-pages/</span>
+<span class="l-Scalar-Plain">gems</span><span class="p-Indicator">:</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">jemoji</span>
+  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">jekyll-sitemap</span>
+
+<span class="l-Scalar-Plain">kramdown</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">input</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">GFM</span>
+  <span class="l-Scalar-Plain">auto_ids</span><span class="p-Indicator">:</span>      <span class="l-Scalar-Plain">true</span>
+  <span class="l-Scalar-Plain">footnote_nr</span><span class="p-Indicator">:</span>   <span class="l-Scalar-Plain">1</span>
+  <span class="l-Scalar-Plain">entity_output</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">as_char</span>
+  <span class="l-Scalar-Plain">toc_levels</span><span class="p-Indicator">:</span>    <span class="l-Scalar-Plain">1..6</span>
+  <span class="l-Scalar-Plain">smart_quotes</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">lsquo,rsquo,ldquo,rdquo</span>
+  <span class="l-Scalar-Plain">use_coderay</span><span class="p-Indicator">:</span>   <span class="l-Scalar-Plain">false</span>
+
+  <span class="l-Scalar-Plain">coderay</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">coderay_wrap</span><span class="p-Indicator">:</span>              <span class="l-Scalar-Plain">div</span>
+    <span class="l-Scalar-Plain">coderay_line_numbers</span><span class="p-Indicator">:</span>      <span class="l-Scalar-Plain">inline</span>
+    <span class="l-Scalar-Plain">coderay_line_number_start</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1</span>
+    <span class="l-Scalar-Plain">coderay_tab_width</span><span class="p-Indicator">:</span>         <span class="l-Scalar-Plain">4</span>
+    <span class="l-Scalar-Plain">coderay_bold_every</span><span class="p-Indicator">:</span>        <span class="l-Scalar-Plain">10</span>
+    <span class="l-Scalar-Plain">coderay_css</span><span class="p-Indicator">:</span>               <span class="l-Scalar-Plain">style</span></code></pre></div>
+
+<p><code>_config.yml</code>文件中的变量会在.html文件中使用,可以根据自己的需求进行更新.站点内部的链接均以<code>{{ site.url }}</code>为前缀,所以在本地测试时请确保<code>_config.yml</code>中变量<code>url</code>值为<code>http://localhost:4000</code>, 否则将导致资源无法加载.
+<strong><code>Push至github时请替换成</code>username.github.io<code>，否则站点可能无法正常工作.</code></strong></p>
+
+<hr />
+
+<h4 id="span-classlabel-label-infospan"><span class="label label-info">特色图片</span></h4>
+
+<p>Simple Better主题有两种主要的布局: 用于博文的<code>post.html</code>和用于页面的<code>page.html</code>.两种样式的布局均支持插入特色图片,让页面不再单调.若需要使用特色图片功能,请将图片资源放入<code>assets/images</code>目录下,同时在博文或页面的头部配置项中添加如下信息:</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">image</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">file</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">image-name.jpg</span>
+  <span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span>   <span class="l-Scalar-Plain">author-name</span>
+  <span class="l-Scalar-Plain">link</span><span class="p-Indicator">:</span>     <span class="l-Scalar-Plain">image-link</span></code></pre></div>
+
+<hr />
+
+<h4 id="span-classlabel-label-infospan-1"><span class="label label-info">添加视频</span></h4>
+
+<p>借助<a href="http://fitvidsjs.com/">FitVids</a>,可在博文/页面中加入响应式视频媒体.代码如下:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">&quot;560&quot;</span> <span class="na">height=</span><span class="s">&quot;315&quot;</span> <span class="na">src=</span><span class="s">&quot;http://www.youtube.com/embed/PWf4WUoMXwg&quot;</span> <span class="na">frameborder=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;/iframe&gt;</span></code></pre></div>
+
+<p><span class="label label-warning">提示: 为了视频的正常工作,请在<code>&lt;iframe&gt;</code>标签之间添加一个空格且移除<code>allowfullscreen</code>属性.</span></p>
+
+<hr />
+
+<h4 id="span-classlabel-label-infospan-2"><span class="label label-info">检索</span></h4>
+
+<p>在<code>_config.yml</code>中添加以下信息,开启检索功能:</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">search</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span></code></pre></div>
+
+<figure>
+  <img src="http://localhost:4000/assets/images/search-demo.png" alt="search screenshot" />
+  <span class="label label-success">点击导航栏中的'SEARCH',按文章名进行全站检索.</span>
+</figure>
+
+<hr />
+
+<h4 id="span-classlabel-label-infospan-3"><span class="label label-info">社交分享</span></h4>
+
+<p>在头部配置项中添加以下信息,即可以开启分享社交功能,如Twitter、Google+:
+<code>代码在post_info.html中line:35-48</code></p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">share</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span></code></pre></div>
+
+<hr />
+
+<h4 id="span-classlabel-label-infodisqusspan"><span class="label label-info">Disqus评论</span></h4>
+
+<p>1.创建<a href="http://disqus.com">Disqus</a>账号   <br />
+  2.将<code>_config.yml</code>中<code>disqus_shortname</code>修改为你Disqus账号信息中的<em>shortname</em>.   <br />
+  3.在post的头部配置项中添加以下信息，可开启评论功能:</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">comments</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">true</span></code></pre></div>
+
+<hr />
+
+<h4 id="span-classlabel-label-infogoogle-analyticsspan"><span class="label label-info">Google Analytics</span></h4>
+
+<p>1.创建<a href="https://www.google.com/analytics/">Google Analytics</a>账号   <br />
+  2.将<code>_config.yml</code>中<code>google_analytics_id</code>修改为你Google Analytics对应的媒体资源的跟踪ID   <br />
+  3.将google_analytics_res修改为你Google Analytics中与上述跟踪ID对应的默认网址.<span class="label label-warning">ps:去除https:// 或 http://</span>    <br />
+  4.这些信息会在Google Analytics的跟踪代码中使用.<span class="label label-warning">跟踪代码见`_includes/scripts.html</span>   <br />
+  5.配置成功,便可以使用Google Analytics跟踪分析站点的访问数据了.</p>
+
+<hr />
+
+<h4 id="span-classlabel-label-infospan-4"><span class="label label-info">许可说明</span></h4>
+
+<ul>
+  <li>This theme is free and open source.</li>
+  <li>Feel free to to modify this theme to suit your needs.</li>
+  <li>Sound pretty sweet to give me credit on your site <a href="https://github.com/shawzt/simple-better-theme/">@shawzt</a>.</li>
+</ul>
+
+<hr />
+
+<h4 id="span-classlabel-label-infospan-5"><span class="label label-info">问题?</span></h4>
+
+<p>如果你在使用本主题过程中,遇到什么问题或想咨询相关信息,欢迎留言</p>
+
+<hr />
+
+            
+              <div id="disqus_thread"></div>
+            
+          </div>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <ul class="pager">
+            
+            
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div class="footer-wrapper">
+      <footer role="contentinfo">
+        <div class="social-icons">
+  
+    <a href="https://twitter.com/shawzt" title="shawzt on twitter" target="_blank">
+      <i class="fa fa-twitter-square fa-3x"></i>
+    </a>
+  
+    <a href="https://github.com/shawzt" title="shawzt on github" target="_blank">
+      <i class="fa fa-github-square fa-3x"></i>
+    </a>
+  
+    <a href="https://plus.google.com/+ShawZTProo" title="shawzt on google-plus" target="_blank">
+      <i class="fa fa-google-plus-square fa-3x"></i>
+    </a>
+  
+</div>
+<span>&copy; 2014 shawzt.</span>
+<br/>
+<span>Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>.</span>
+<br/>
+<span>Using the <a href="https://github.com/shawzt/simple-better-theme/" target="_blank">Simple-Better-Theme</a>.</span>
+      </footer>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/navigator.js"></script>
+<script src="http://localhost:4000/assets/js/jekyll-search.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<!-- Simple Search -->
+
+  <script>
+  $(document).ready(function() {
+  result_template = '<li><article><a href="{url}">{title}</a><div style="float:right"><span class="label label-success">{tag}</span><span class="entry-date"><time>{shortdate}</time></span></div></article></li>';
+  $(".search-field").simpleJekyllSearch({
+  searchResults: $('.search-results'),
+  jsonFile: '/search.json',
+  template: result_template,
+  });
+  });
+
+  (function( $, window, undefined ) {
+  var search = {
+  close: $(".icon-remove-sign"),
+  form: $(".search-form"),
+  results: $(".search-results"),
+  canvas: $("body"),
+  start: $('.dosearch')
+  };
+
+  // search
+  search.start.on('click', function() {
+  $('.search-wrapper').css({ display: "block" });
+  search.form.toggleClass('active');
+  search.form.find('input').focus();
+  search.canvas.toggleClass('search-overlay');
+  });
+
+  // clode
+  $(document).keyup(function(x) {
+    if(x.keyCode == 27) stop();
+  });
+  search.close.on('click', stop());
+  function stop() {
+  search.form.find('input').val('');
+  search.results.empty();
+  search.form.find('input').focus();
+  $('.search-wrapper').removeAttr( 'style' );
+  search.form.toggleClass('active');
+  search.canvas.removeClass('search-overlay');
+  }
+  })( jQuery, window );
+  </script>
+
+<!-- End Search -->
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-47043610-1', 'shawzt.github.io');
+  ga('send', 'pageview');
+  </script>
+
+
+
+  <script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'logsomething'; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </body>
+</html>

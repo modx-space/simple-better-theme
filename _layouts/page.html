@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    {% include head.html %}
+  </head>
+  <body id="page">
+    {% include partials.html %}
+    <div id="main">
+      <article class="entry">
+        {% include image_show.html %}
+        <div class="entry-wrapper">
+          <header class="entry-header">
+            <h1 class="entry-title">{{ page.title }}</h1>
+          </header>
+          <div class="entry-content">
+            {{ content }}
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="footer-wrapper">
+      <footer>
+        {% include footer.html %}
+      </footer>
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>

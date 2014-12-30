@@ -1,0 +1,77 @@
+title:            Keep Writing
+description:      记录点滴，积累成长
+logo:             site-logo.png
+theme:            https://github.com/shawzt/simple-better-theme/
+# Change url to your site's domain.
+# Leave localhost server when working locally.
+# url:              http://shawzt.github.io
+url:              http://localhost:4000
+
+# Owner/author information
+owner:
+  name:           shawzt
+  avatar:         shawzt.png
+  email:          shawzt@gmail.com
+  # Social networking links used in footer.
+  # name should be the same as the icon name on http://fortawesome.github.io/Font-Awesome/icons/
+  socials:
+    - name: twitter
+      url:  https://twitter.com/shawzt
+    - name: github
+      url:  https://github.com/shawzt
+    - name: google-plus
+      url:  https://plus.google.com/+ShawZTProo
+
+# Google Analytics here
+google_analytics:
+  enable: true
+  id:     UA-47043610-1
+  res:    shawzt.github.io
+
+# Disqus is a free service that enables great online communities
+disqus_shortname: logsomething
+
+search:           true
+feed:             true
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about/
+  - title: Archives
+    url: /archives/
+  - title: Tags
+    url: /tags/
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Shanghai
+future:      true
+highlighter: pygments
+markdown:    kramdown
+paginate:    5
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   none    #/:categories/:title/
+
+gems:
+  - jemoji
+  - jekyll-sitemap
+
+kramdown:
+  input: GFM
+  auto_ids:      true
+  footnote_nr:   1
+  entity_output: as_char
+  toc_levels:    1..6
+  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  use_coderay:   false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
+
+include: [".htaccess"]
+exclude: ["Gemfile", "Gemfile.lock"]

@@ -1,0 +1,56 @@
+---
+layout: page
+permalink: /tags/
+title: Tags
+description: "An archive of posts grouped by tag."
+---
+
+<ul class="tag-box inline">
+  {% assign tags_list = site.tags %}
+  {% if tags_list.first[0] == null %}
+    {% for tag in tags_list %}
+      <li>
+        <a href="#{{ tag }}">{{ tag }} <span>{{ site.tags[tag].size }}</span></a>
+      </li>
+    {% endfor %}
+  {% else %}
+    {% for tag in tags_list %}
+      <li>
+        <a href="#{{ tag[0] }}">{{ tag[0] }} <span>{{ tag[1].size }}</span></a>
+      </li>
+    {% endfor %}
+  {% endif %}
+  {% assign tags_list = nil %}
+</ul>
+<table class="table table-hover">
+  {% for tag in site.tags %}
+    <tr>
+      <td>
+        <h3 id="{{ tag[0] }}">
+        <span class="label label-primary">{{ tag[0] }}</span>
+        </h3>
+      </td>
+      <td>
+        <ul>
+          {% assign pages_list = tag[1] %}
+          {% for post in pages_list %}
+            {% if post.title != null %}
+              {% if group == null or group == post.group %}
+                <li>
+                  <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                  [
+                  <span class="entry-date">
+                  {{ post.date | date: "%Y-%m-%d" }}
+                  </span>
+                  ]
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          {% assign pages_list = nil %}
+          {% assign group = nil %}
+        </ul>
+      </td>
+    </tr>
+  {% endfor %}
+</table>

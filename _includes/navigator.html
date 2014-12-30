@@ -1,0 +1,23 @@
+<div class="navigation-wrapper">
+  <nav role="navigation" id="site-nav" class="animated drop">
+    <ul>
+      {% for link in site.links %}
+        <li>
+          {% if link.external %}
+            <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+          {% else %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+      {% if site.feed %}
+        <li>
+          <a href="{{ site.url }}/feed.xml"><i class="fa fa-rss"></i> Feed</a>
+        </li>
+      {% endif %}
+      {% if site.search %}
+        <li class="dosearch"><i class="fa fa-search"></i> Search</li>
+      {% endif %}
+    </ul>
+  </nav>
+</div>
