@@ -167,7 +167,7 @@ image:
 ```
 <iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
 ```
-`提示: 为了视频的正常工作,请在`<iframe>`标签之间添加一个空格且移除`allowfullscreen`属性.`
+`提示: 为了视频的正常工作,请在<iframe>标签之间添加一个空格且移除allowfullscreen属性.`
 
 ---
 
@@ -194,9 +194,9 @@ share: true
 
 ####Disqus评论
 
-  1.创建[Disqus](http://disqus.com)账号   
-  2.将`_config.yml`中`disqus_shortname`修改为你Disqus账号信息中的*shortname*.   
-  3.在post的头部配置项中添加以下信息，可开启评论功能:
+  1. 创建[Disqus](http://disqus.com)账号   
+  2. 将`_config.yml`中`disqus_shortname`修改为你Disqus账号信息中的*shortname*.   
+  3. 在post的头部配置项中添加以下信息，可开启评论功能:
   ```
   comments: true
   ```
@@ -205,13 +205,20 @@ share: true
 
 ####Google Analytics
 
-  1.创建[Google Analytics](https://www.google.com/analytics/)账号   
-  2.将`_config.yml`中`google_analytics_id`修改为你Google Analytics对应的媒体资源的跟踪ID   
-  3.将google_analytics_res修改为你Google Analytics中与上述跟踪ID对应的默认网址.`ps:去除https:// 或 http://`    
-  4.这些信息会在Google Analytics的跟踪代码中使用.`跟踪代码见`_includes/scripts.html`   
-  5.配置成功,便可以使用Google Analytics跟踪分析站点的访问数据了.
+  1. 创建[Google Analytics](https://www.google.com/analytics/)账号   
+  2. 将`_config.yml`中`google_analytics_id`修改为你Google Analytics对应的媒体资源的跟踪ID   
+  3. 将google_analytics_res修改为你Google Analytics中与上述跟踪ID对应的默认网址.`ps:去除https:// 或 http://`    
+  4. 这些信息会在Google Analytics的跟踪代码中使用.`跟踪代码见`_includes/scripts.html`   
+  5. 配置成功,便可以使用Google Analytics跟踪分析站点的访问数据了.
 
 ---
+
+####Thor使用
+
+由于Jekyll要求post文件必须以year-date-day-name.md形式命名,所以提供一个基于thor的小工具jekyll.thor,用于在命令行中生成post文件.
+  1. 安装gems: thor, stringex
+  2. 在blog目录下运行 thor jekyll:new post-file-name
+
 
 ####许可说明
 
