@@ -3,7 +3,7 @@ Simple-Better-Theme
 
 ####应用/定制Simple Better主题指南
 
-+ #####__针对全新Jekyll站点的设置__
++ __针对全新Jekyll站点的设置__
 
   1. 如果还没有Jekyll环境,[请阅读并安装Jekyll](http://jekyllrb.com).
   2. 安装Ruby和`bundler gem`,[克隆本主题](https://github.com/shawzt/simple-better-theme)</a>
@@ -14,17 +14,15 @@ Simple-Better-Theme
 
 ---
 
-+ #####__针对已有Jekyll站点的设置__
++ __针对已有Jekyll站点的设置__
 
   1. 替换站点中的以下目录: `_includes`, `_layouts`, `assets`.
   2. 根据需求编辑如下文件: `about.md`, `archives.html`, `index.html`, `tags.html`.
   3. 根据需求编辑`_config.yml`文件.
 
----
-
 ####Simple Better主题详解
 
-+ #####__目录结构__
++ __目录结构__
 
 ```
 simple-better-theme/
@@ -63,7 +61,7 @@ simple-better-theme/
 └── tags.html                     #标签页面
 ```
 
-+ #####__配置文件_config.yml__
++ __配置文件_config.yml__
 ```
 title:            站点名称
 description:      站点描述
@@ -180,7 +178,7 @@ image:
 search: true
 ```
 
-点击导航栏中的'SEARCH',按文章名进行全站检索.如图![search](./assets/images/search-demo.png):
+点击导航栏中的'SEARCH',按文章名进行全站检索.如图![search](./assets/images/search-demo.png)
 
 ---
 
