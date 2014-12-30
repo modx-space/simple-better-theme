@@ -219,6 +219,7 @@ share: true
   1. 安装gems: thor, stringex
   2. 在blog目录下运行 thor jekyll:new post-file-name
 
+---
 
 ####许可说明
 
